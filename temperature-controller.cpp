@@ -19,13 +19,13 @@ boolean a=LOW,b=HIGH;
 float h=0,t=0;
 int counter = 0;
 
-#define WIFI_SSID "mardes home"
-#define WIFI_PASSWORD "Prateek123@@"
+#define WIFI_SSID "your WiFi SSID"
+#define WIFI_PASSWORD "Your WiFi Password"
 
 
 #define projectID "warrior-bulls-default-rtdb" //Your Firebase Project ID; can be found in project settings.
-#define FIREBASE_HOST "warrior-bulls-default-rtdb.firebaseio.com"
-#define FIREBASE_AUTH "2JNTy9dXCRiq3Yyf78K9DqOhKZMzwnLeNIgZF5G3"
+#define FIREBASE_HOST "Your Firebase Host ID"
+#define FIREBASE_AUTH "Your Firebse password"
 
 
 long previousMillis = 0;
@@ -68,9 +68,9 @@ void setup() {
   dht.begin();//Start DHT22 sensor
 
   lcd.clear();
- lcd.print("Tempera:");// print in lcd this word 
+ lcd.print("Temperature:");// print in lcd this word 
  lcd.setCursor(0,1);//Change cursor position
- lcd.print("Humedad:");// print in lcd this word 
+ lcd.print("Humidity:");// print in lcd this word 
 }
 
 void loop()
